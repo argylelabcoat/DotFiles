@@ -110,9 +110,9 @@ if has("gui_running")
 	" Set our font
 	" Windows needs additional font params
 	if has("win32")
-		set guifont=Envy\ Code\ R\ Powerline:h10
+		set guifont=mplus\ Nerd\ Font:h13
 	else
-		set guifont=Envy\ Code\ R\ for\ Powerline
+		set guifont=mplus\ Nerd\ Font:h13
 	endif
 
 	" Cursor preferences
