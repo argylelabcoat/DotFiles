@@ -140,6 +140,7 @@ au BufRead,BufNewFile *.java filetype plugin on
 if has("gui_running")
 	" Set our color scheme
 	colorscheme torte
+	set transparency=15
 	" Behave like the console version
 	set guioptions=aci
 
