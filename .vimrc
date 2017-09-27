@@ -1,6 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+set shell=/bin/bash
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -15,8 +17,9 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -280,16 +283,10 @@ if has("gui_running") || !has("win32")
 	inoremap <C-h> <Esc><<A
 endif
 
-"=======================
-" Pathogen Plugin
-"=======================
-call pathogen#infect()
-" -- Neocomplcache --
-if !exists('g:neocomplcache_omni_patterns')
-    let g:neocomplcache_omni_patterns = {}
-endif
-let g:neocomplcache_omni_patterns.haxe = '\v([\]''"]|\w)(\.|\()'
-" -- Powerline --
-let g:Powerline_symbols = 'fancy'
+" -- Airline --
+
+let g:airline_theme='powerlineish'
+let g:airline_powerline_fonts = 1
+
 " -- Tag Bar --
 nmap <F8> :TagbarToggle<CR> 
