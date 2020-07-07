@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/matthew/dev/DotFiles'
+let g:netrw_dirhist_0='/home/matthew/dev'
+let g:netrw_dirhist_9='/home/matthew/dev/nexus/examples/rpc/callee'
+let g:netrw_dirhist_8='/home/matthew/dev/nexus/examples/rpc'
+let g:netrw_dirhist_7='/home/matthew/dev/nexus/examples/rpc/caller'
+let g:netrw_dirhist_6='/home/matthew/dev/nexus/examples/rpc'
+let g:netrw_dirhist_5='/home/matthew/dev/O180012_Rexnord/hub/server'
+let g:netrw_dirhist_4='/home/matthew/dev/O180012_Rexnord/hub'
+let g:netrw_dirhist_3='/home/matthew/dev/O180012_Rexnord/hub/client'
+let g:netrw_dirhist_2='/home/matthew/dev/plugin-discussion/RTA-FAAS'
