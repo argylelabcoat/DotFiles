@@ -1,11 +1,11 @@
 #!/bin/sh
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install zsh fish rxvt-unicode-256color gcc clang neovim \
-python3-pip scons cmake subversion subversion-tools fossil mercurial git exuberant-ctags \
+sudo apt-get install flatpak podman zsh fish rxvt-unicode-256color gcc clang neovim \
+python3-pip python3-virtualenv scons cmake subversion subversion-tools fossil mercurial git exuberant-ctags \
 rsync rclone rclone-gui curl wget \
-picom numlockx flatpak i3 i3bar i3lock yabar rofi alacritty \
-zathura xfe ranger udiskie \
+picom numlockx i3 i3bar i3lock yabar rofi alacritty \
+zathura xfe ranger pass gnupg udiskie \
 mpd mpc cantada pms pamix pactl \
 
 
