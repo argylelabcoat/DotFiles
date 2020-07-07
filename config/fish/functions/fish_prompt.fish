@@ -1,0 +1,1 @@
+/home/matthew/dev/powerline-go-fish/fish_prompt.fish
