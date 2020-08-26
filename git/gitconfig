@@ -1,0 +1,17 @@
+[user]
+	email = mhughes@rtautomation.com
+	name = Matthew Hughes
+
+[credential]
+	helper = store --file ~/.git-credentials
+
+[core]
+  editor = nvim
+
+[merge]
+  tool = smerge
+[diff]
+	guitool = smerge
+	tool = smerge
+
+
