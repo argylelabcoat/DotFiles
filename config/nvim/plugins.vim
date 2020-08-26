@@ -10,7 +10,7 @@ call plug#begin("~/.vim/plugged")
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } 
   Plug 'itchyny/lightline.vim'
   Plug 'tpope/vim-fugitive'
   Plug 'mbbill/undotree'
@@ -23,6 +23,16 @@ call plug#begin("~/.vim/plugged")
   Plug 'mhinz/vim-startify'
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
   Plug 'majutsushi/tagbar'
+  Plug 'editorconfig/editorconfig-vim'
+" Web Technologies
+  Plug 'pangloss/vim-javascript'
+  Plug 'leafgarland/typescript-vim'
+  Plug 'peitalin/vim-jsx-typescript'
+  Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+  Plug 'jparise/vim-graphql'
+
+  Plug 'mitsuhiko/vim-jinja'
 call plug#end()
 
-
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1

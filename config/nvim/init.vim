@@ -21,9 +21,10 @@ nnoremap <A-l> <C-w>l
 "Split panel
 nnoremap <leader>v <C-w>v
 nnoremap <leader>s <C-w>s
-"Map yanked to clipboard
+"Map yanked to middle-click clipboard
 vnoremap <C-c> "*y
 
+nmap <Leader><Space> :noh<CR>
 
 nmap <F8> :TagbarToggle<CR> 
 
@@ -44,7 +45,7 @@ set hidden
 "Load up my various Plugin Configs:
 source $HOME/.config/nvim/tree.vim
 source $HOME/.config/nvim/lang.vim
-source $HOME/.config/nvim/coc.vim
+" source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/commenter.vim
 source $HOME/.config/nvim/status.vim
 source $HOME/.config/nvim/search.vim
