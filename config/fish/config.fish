@@ -1,1 +1,1 @@
-source ~/.profile
+bass source ~/.profile
