@@ -1,0 +1,3 @@
+[submodule "handy_scripts/submodules/git-split-branch"]
+	path = handy_scripts/submodules/git-split-branch
+	url = https://github.com/djpohly/git-split-branch
