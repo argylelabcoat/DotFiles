@@ -21,3 +21,22 @@ For fish, I created a new file named nix.fish in ~/.config/fish/conf.d/ :
 #!/usr/bin/env fish
 bass source /etc/profile.d/nix.sh
 ```
+
+To hide the nixbld1-32 users from login, the following things needed to happen:
+
+GDM:
+For nixbld1 through 32 (this is just nixbld1)
+```bash
+sudo cp /var/lib/AccountsService/users/{gdm,nixbld1} 
+```
+
+SDDM:
+edit /etc/sddm.conf
+
+add or edit [Users] section:
+
+```conf
+[Users]
+HideShells=/sbin/nologin
+```
+
