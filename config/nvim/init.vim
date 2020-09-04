@@ -44,8 +44,8 @@ set hidden
 
 "Load up my various Plugin Configs:
 source $HOME/.config/nvim/tree.vim
-source $HOME/.config/nvim/lang.vim
-" source $HOME/.config/nvim/coc.vim
+" source $HOME/.config/nvim/lang.vim
+source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/commenter.vim
 source $HOME/.config/nvim/status.vim
 source $HOME/.config/nvim/search.vim

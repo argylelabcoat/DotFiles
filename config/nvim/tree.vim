@@ -52,7 +52,7 @@ let g:WebDevIconsDefaultFolderSymbolColor = s:beige
 let g:WebDevIconsDefaultFileSymbolColor = s:blue 
 
 " NERDTree Git Plugin
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
     \ "Untracked" : "✭",
