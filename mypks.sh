@@ -10,7 +10,7 @@ zathura xfe ranger pass gnupg udiskie \
 mpd mpc cantada pms pamix pactl \
 
 
-pip3 install conan meson tmuxp httpie git-archive-all
+pip3 install --user jedi pylint prospector autopep8 conan meson tmuxp httpie git-archive-all
 
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh 
 chsh -s `which fish`

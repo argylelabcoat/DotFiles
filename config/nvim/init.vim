@@ -49,3 +49,4 @@ source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/commenter.vim
 source $HOME/.config/nvim/status.vim
 source $HOME/.config/nvim/search.vim
+source $HOME/.config/nvim/markdown.vim

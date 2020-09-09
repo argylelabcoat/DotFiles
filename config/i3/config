@@ -30,6 +30,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- $HOME/.config/i3/lock.sh 
 exec --no-startup-id ~/.config/i3/startup.sh
 
 
+# Set Focus Settings:
+focus_on_window_activation urgent
+
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
