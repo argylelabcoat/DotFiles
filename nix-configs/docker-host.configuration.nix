@@ -61,6 +61,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     wget curl zsh fish bash neovim vim emacs-nox tmux unzip xz bat docker-compose lazydocker ctop htop ytop python38Packages.glances fbterm netsurf.browser
+    ubuntu_font_family nerdfonts
   ];
 
   # List services that you want to enable:
@@ -87,7 +88,7 @@
   users.users = {
     matthew = {
       isNormalUser = true;
-      extraGroups = ["wheel" "docker" ];
+      extraGroups = ["wheel" "video" "input" "docker" ];
       shell = pkgs.fish;
     };
   };
