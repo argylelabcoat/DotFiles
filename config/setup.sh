@@ -17,6 +17,7 @@ cat >> ~/.inputrc <<'EOF'
 EOF
 
 cat >> ~/.bashrc <<'EOF'
+export EDITOR=$(which nvim)
 eval "$(starship init bash)"
 source /etc/profile.d/nix.sh
 eval "$(direnv hook bash)"
