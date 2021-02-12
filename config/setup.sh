@@ -24,7 +24,7 @@ eval "$(direnv hook bash)"
 EOF
 
 
-git config --global user.email "matthew@localhost"
+#git config --global user.email "matthew@localhost"
 git config --global user.name "Matthew Hughes"
 git config --global core.editor "nvim"
 
