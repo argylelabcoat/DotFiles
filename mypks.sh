@@ -1,13 +1,16 @@
 #!/bin/sh
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install flatpak podman zsh fish rxvt-unicode-256color gcc clang neovim \
+sudo add-apt-repository ppa:otter-browser/release
+sudo apt-get update
+sudo apt-get install -y flatpak podman zsh fish rxvt-unicode-256color gcc clang neovim \
 python3-pip python3-virtualenv scons cmake subversion subversion-tools fossil mercurial git exuberant-ctags build-essential \
 cpanminus libtool libtool-bin automake autoconf libboost-all-dev \
 rsync rclone rclone-gui curl wget \
 picom numlockx i3 i3bar i3lock yabar rofi alacritty tmux fzf \
 zathura xfe ranger pass gnupg udiskie \
 mpd mpc cantada pms pamix pactl \
+otter-browser midori
 
 
 pip3 install --user jedi pylint prospector autopep8 conan meson tmuxp httpie git-archive-all

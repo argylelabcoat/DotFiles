@@ -1,0 +1,35 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/*
+ * Edit this file and copy it as userChrome.css into your
+ * profile-directory/chrome/
+ */
+
+/*
+ * This file can be used to customize the look of Mozilla's user interface
+ * You should consider using !important on rules which you want to
+ * override default settings.
+ */
+
+/*
+ * Do not remove the @namespace line -- it's required for correct functioning
+ */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
+/* Use custom throbbers in SeaMonkey */
+#navigator-throbber {
+    list-style-image : url("Throbber32S.png") !important;
+}
+
+#navigator-throbber[busy="true"] {
+    list-style-image : url("Throbber32A.gif") !important;
+}
+
+#navigator-throbber[toolbarmode="small"] {
+    list-style-image : url("Throbber16S.png") !important;
+}
+
+#navigator-throbber[busy="true"][toolbarmode="small"] {
+    list-style-image : url("Throbber16A.gif") !important;
+}
