@@ -23,19 +23,19 @@ scrolling:
 
 font:
   normal:
-    family: Hack
+    family: Hack NF
     style: Regular
 
   bold:
-    family: Hack
+    family: Hack NF
     style: Bold
 
   italic:
-    family: Hack
+    family: Hack NF
     style: Italic
 
   bold_italic:
-    family: Hack
+    family: Hack NF
     style: Bold Italic
 
   size: 9.5
@@ -50,7 +50,7 @@ font:
 
 draw_bold_text_with_bright_colors: true
 
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
   color: '#ffffff'
