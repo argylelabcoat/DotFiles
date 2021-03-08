@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cp -r nvim ~/.config/
+ln -s $PWD/nvim $HOME/.config/nvim
 
 # NeoVim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -8,12 +8,11 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 nvim -E   +PlugInstall +qall || echo "installed plugins" 
 
 # Tmux
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-cp tmux.conf ~/.tmux.conf
-cp tmux.conf.local ~/.tmux.conf.local
+ln -s $PWD/tmux/tmux.conf $HOME/.tmux.conf
 
-cp bash/bash_custom ~/.bash_custom
-cp bash/bash_funcs ~/.bash_funcs
+# Bash
+ln -s $PWD/bash/bash_custom $HOME/.bash_custom
+ln -s $PWD/bash/bash_funcs $HOME/.bash_funcs
 
 # Bash
 cat >> ~/.inputrc <<'EOF'
