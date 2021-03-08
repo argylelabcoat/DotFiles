@@ -38,3 +38,11 @@ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 ~/.emacs.d/bin/doom doctor
 systemctl --user enable emacs
 systemctl --user start emacs
+
+git clone https://github.com/argylelabcoat/simple_scripts
+./simple_scripts/setup/install_node.sh
+./simple_scripts/setup/install_go.py
+./simple_scripts/setup/install_starship.sh
+./simple_scripts/setup/nerd_fonts.py
+
+npm install -g markdownlint-cli
