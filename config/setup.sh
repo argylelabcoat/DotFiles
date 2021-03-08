@@ -30,3 +30,11 @@ EOF
 git config --global user.name "Matthew Hughes"
 git config --global core.editor "nvim"
 
+# Emacs
+ln -s $PWD/doom.d $HOME/.doom.d
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+~/.emacs.d/bin/doom install
+~/.emacs.d/bin/doom sync
+~/.emacs.d/bin/doom doctor
+systemctl --user enable emacs
+systemctl --user start emacs
