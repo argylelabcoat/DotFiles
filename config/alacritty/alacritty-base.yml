@@ -18,7 +18,7 @@ window:
   startup_mode: Windowed
 
 scrolling:
-  history: 2500
+  history: 10000
   multiplier: 3
 
 font:
@@ -47,13 +47,6 @@ font:
   glyph_offset:
     x: 0
     y: 0
-
-draw_bold_text_with_bright_colors: true
-
-bell:
-  animation: EaseOutExpo
-  duration: 0
-  color: '#ffffff'
 
 background_opacity: 0.8
 
