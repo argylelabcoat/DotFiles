@@ -1,0 +1,5 @@
+# Right now I'm building upon the OpenSuse defaults
+
+input * xkb_capslock enable
+input * xkb_numlock enable
+
