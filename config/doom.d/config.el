@@ -54,3 +54,43 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+(defun init-my-font ()
+  (set-face-font
+   'default
+   (font-spec
+    :family "ProFontIIx Nerd Font Mono"
+    :size 12
+    :weight 'normal
+    :width 'normal
+    :slant 'normal))
+  (set-face-attribute 'default nil :height 103)
+  ;; emoji font
+  (set-fontset-font
+   t 'symbol
+   (font-spec
+    :family "Noto Color Emoji"
+    :size 10.3
+    :weight 'normal
+    :width 'normal
+    :slant 'normal))
+  ;; fallback font
+  (set-fontset-font
+   t nil
+   (font-spec
+    :family "Symbola"
+    :size 10.3
+    :weight 'normal
+    :width 'normal
+    :slant 'normal)))
+
+
+(add-hook
+ 'server-after-make-frame-hook
+ (let (done)
+   (lambda ()
+     (unless done
+       ;; still set done to true even if we hit a bug (otherwise we
+       ;; can never open a frame to see the problem)
+       (setq done t)
+       (init-my-font)))))
