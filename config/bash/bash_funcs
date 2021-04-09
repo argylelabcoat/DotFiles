@@ -60,3 +60,8 @@ delayshot(){
 clipshot(){
   maim -s | xclip -selection clipboard -t image/png
 }
+
+track(){
+  branch=$(git branch --show-current)
+  git push --set-upstream origin $branch
+}
