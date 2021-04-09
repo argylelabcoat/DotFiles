@@ -4,11 +4,11 @@ function! CoCPlugs(info)
   " - status: 'installed', 'updated', or 'unchanged'
   " - force:  set on PlugInstall! or PlugUpdate!
   if a:info.status == 'installed' || a:info.force
-    g:CocInstall coc-clangd "C++
-    g:CocInstall coc-rome   "Javascript/Typescript
-    g:CocInstall coc-go     "Golang
-    g:CocInstall coc-rls    "Rustlang
-    g:CocInstall coc-python "Pythong
+    g:CocInstall coc-clangd     "C++
+    g:CocInstall coc-tsserver   "Javascript/Typescript
+    g:CocInstall coc-go         "Golang
+    g:CocInstall coc-rls        "Rust
+    g:CocInstall coc-pyright    "Python
   endif
 endfunction
 call plug#begin("~/.vim/plugged")
@@ -31,7 +31,7 @@ call plug#begin("~/.vim/plugged")
   " Fun Start Screen
   Plug 'mhinz/vim-startify'
   " Language Plugins
-  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+  " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
   Plug 'LnL7/vim-nix'
   Plug 'majutsushi/tagbar'
   Plug 'editorconfig/editorconfig-vim'
