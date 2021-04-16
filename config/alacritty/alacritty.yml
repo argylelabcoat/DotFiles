@@ -23,22 +23,22 @@ scrolling:
 
 font:
   normal:
-    family: Hack NF
+    family: TerminessTTF NF
     style: Regular
 
   bold:
-    family: Hack NF
+    family: TerminessTTF NF
     style: Bold
 
   italic:
-    family: Hack NF
+    family: TerminessTTF NF
     style: Italic
 
   bold_italic:
-    family: Hack NF
+    family: TerminessTTF NF
     style: Bold Italic
 
-  size: 9.5
+  size: 12
 
   offset:
     x: 0
