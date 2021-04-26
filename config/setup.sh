@@ -2,12 +2,14 @@
 
 ln -s $PWD/nvim $HOME/.config/nvim
 
-# NeoVim
+# NeoVim Plugins
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 nvim -E   +PlugInstall +qall || echo "installed plugins" 
 
-# Tmux
+# Tmux TPM
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# Tmux Config
 ln -s $PWD/tmux/tmux.conf $HOME/.tmux.conf
 
 # Bash
