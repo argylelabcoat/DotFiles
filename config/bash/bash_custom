@@ -1,10 +1,17 @@
 #!/bin/bash
 
 # Rust
-source $HOME/.cargo/env
+if [ -f $HOME/.cargo/env ]; then
+	source $HOME/.cargo/env
+fi
 
 # Go
 export PATH=/usr/local/go/bin:$PATH
+
+# Zig
+if [ -f /usr/local/zig/current/zig ]; then
+	export PATH=/usr/local/zig/current:$PATH
+fi
 
 # Home Bin
 export PATH=$HOME/bin:$HOME/.local/bin:$HOME/go/bin:$PATH
@@ -38,3 +45,4 @@ alias la='ls -a'
 alias lla='ls -la'
 alias llah='ls -alh'
 alias lt='ls --tree'
+
