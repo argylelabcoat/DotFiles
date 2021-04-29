@@ -42,6 +42,8 @@
 (setq doom-font (font-spec :family "ProFontIIx Nerd Font Mono" :size 12)
       doom-variable-pitch-font (font-spec :family "Fira Sans" :size 12))
 
+;; treemacs ?
+(setq treemacs-no-png-images t)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
