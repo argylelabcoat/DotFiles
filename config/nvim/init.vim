@@ -28,7 +28,6 @@ vnoremap <C-c> "*y
 nmap <Leader><Space> :noh<CR>
 
 nmap <F8> :TagbarToggle<CR> 
-
 "Editor Config
 syntax enable
 syntax on
@@ -51,3 +50,8 @@ source $HOME/.config/nvim/commenter.vim
 source $HOME/.config/nvim/status.vim
 source $HOME/.config/nvim/search.vim
 source $HOME/.config/nvim/markdown.vim
+
+
+nnoremap <C-b> :NERDTreeToggle <CR>
+
+

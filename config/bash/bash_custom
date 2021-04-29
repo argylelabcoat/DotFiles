@@ -25,6 +25,9 @@ bind '"\e[B": history-search-forward'
 # Neovim as Editor
 export EDITOR=$(which nvim)
 
+# Prettier LS
+alias ls='lsd'
+ 
 # Starship
 # sudo snap install starship
 eval "$(starship init bash)"
