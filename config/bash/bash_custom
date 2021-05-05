@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# ASDF
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+
 # Rust
 if [ -f $HOME/.cargo/env ]; then
 	source $HOME/.cargo/env
@@ -38,7 +43,13 @@ source "$NVM_DIR/nvm.sh"  # This loads nvm
 source "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # direnv
-eval "$(direnv hook bash)"
+eval "$(asdf exec direnv hook bash)"
+
+# A shortcut for asdf managed direnv.
+direnv() { asdf exec direnv "$@"; }
+
+# Tmux
+alias tmux='tmux -2'
 
 # LSD
 alias ls='lsd'
