@@ -54,7 +54,7 @@ alias tmux='tmux -2'
 # LSD
 alias ls='lsd'
 
-alias l='ls -l'
+alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias llah='ls -alh'
