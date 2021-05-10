@@ -1,7 +1,13 @@
 #!/bin/sh
-xrandr --output eDP-1 --mode 1920x1080
+
+case $HOSTNAME in
+  (SpinachFetaPizza) ./SpinachFetaPizza.sh;;
+  (lilamd)      echo "I guess we are working from home";;
+  (strongarm)   echo "Pinebook Fun";;
+esac
+
+numlockx on &
 picom &
-feh --bg-fill /usr/share/backgrounds/budgie/coffee_on_bench_by_mikesh_kaos.jpg &
 xpad &
 udiskie -s -a -n 
 # qtpass &
