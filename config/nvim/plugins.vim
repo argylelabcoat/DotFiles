@@ -9,6 +9,8 @@ function! CoCPlugs(info)
     g:CocInstall coc-go         "Golang
     g:CocInstall coc-rls        "Rust
     g:CocInstall coc-pyright    "Python
+    g:CocInstall coc-omnisharp  "C#
+    g:CocInstall coc-json       "json
   endif
 endfunction
 call plug#begin("~/.vim/plugged")
@@ -32,6 +34,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'mhinz/vim-startify'
   " Language Plugins
   " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+  Plug 'ziglang/zig.vim'
   Plug 'LnL7/vim-nix'
   Plug 'majutsushi/tagbar'
   Plug 'editorconfig/editorconfig-vim'

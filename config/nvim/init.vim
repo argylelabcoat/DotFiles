@@ -3,7 +3,8 @@ source $HOME/.config/nvim/plugins.vim
 if (has("termguicolors"))
  set termguicolors
 endif
-set background=light
+set background=dark
+"light
 let g:gruvbox_contrast_light='medium'
 colorscheme gruvbox
 

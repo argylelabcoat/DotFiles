@@ -13,6 +13,12 @@
   "go.goplsOptions": {
     "completeUnimported": true
   },
+  "zig": {
+    "command": "zls",
+    "filetypes": [
+      "zig"
+    ]
+  },
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "javascriptreact",
