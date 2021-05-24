@@ -1,7 +1,7 @@
 #!/bin/sh
 
 case $HOSTNAME in
-  (SpinachFetaPizza) ./SpinachFetaPizza.sh;;
+  (SpinachFetaPizza) $HOME/.config/i3/SpinachFetaPizza.sh;;
   (lilamd)      echo "I guess we are working from home";;
   (strongarm)   echo "Pinebook Fun";;
 esac
